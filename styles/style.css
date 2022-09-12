@@ -280,6 +280,79 @@ img {
   font-size: var(--fs-small);
 }
 
-main#about {
+/* About.html styling */
+
+main.about {
   text-align: center;
 }
+
+.land-page-about {
+  align-items: center;
+  width: 100%;
+  min-height: 65vh;
+  background-image: url('/images/mobile_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-inline: var(--size-270);
+}
+
+.menu-about {
+  text-align: start;
+}
+
+.description-about {
+  padding: var(--size-200);
+  margin-top: var(--size-500);
+  margin-bottom: var(--size-170);
+  border: 1px var(--primary-color) solid;
+  font-size: var(--size-170);
+  background-color: white;
+  line-height: 22px;
+}
+
+.logo-about {
+  border-bottom: 1px var(--primary-color) solid;
+}
+
+.h2-black {
+  font-size: var(--fs-small);
+  color: var(--primary-dark);
+  line-height: 22px;
+  padding: 1em;
+}
+
+.h2-email {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-bolder);
+}
+
+.program-title img{
+  max-width: 100%;
+}
+
+.program-title p {
+  font-size: var(--fs-small);
+}
+
+.previous-events {
+  display: grid;
+  position: relative;
+  gap: var(--size-500);
+  justify-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous-details {
+  color: white;
+  min-width: 100%;
+  background-color: rgba(255, 166, 0, 0.5);
+  position: absolute;
+  text-align: center;
+}
+
