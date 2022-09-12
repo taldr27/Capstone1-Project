@@ -1,0 +1,106 @@
+:root {
+  --primary-color: hsl(0, 0%, 83%);
+  --primary-color-opacity: hsl(0, 0%, 97%);
+  --primary-orange: hsl(6, 82%, 59%);
+  --primary-dark: hsl(222, 11%, 17%);
+  
+  --fs-small: 0.75em;
+  --fs-300: 1em;
+  --fs-600: 1.5em;
+  --fs-700: 2em;
+  --fs-800: 2.5em;
+  --fs-big: 3em;
+  
+  --fw-100: 100;
+  --fw-lighter: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+  --size-50: 0.25em;
+  --size-100: 0.5em;
+  --size-150: 0.75em;
+  --size-200: 1em;
+  --size-250: 1.125em;
+  --size-270: 1.2em;
+  --size-300: 1.5em;
+  --size-400: 2em;
+  --size-500: 2.5em;
+  --size-600: 3em;
+  --size-700: 4em;
+  --size-800: 6em;
+  --size-900: 7em;
+  --size-xl: 9em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Start styling */
+
+.wrapper {
+  max-width: min(1200px, 92%);
+  margin: auto;
+}
+
+.menu-ico {
+  margin-block: var(--size-200);
+  margin-inline-start: var(--size-50);
+  font-size: var(--fs-700);
+
+}
+
+.land-page {
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+  background-image: url('/images/mobile_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-inline: var(--size-270);
+}
+
+.landing-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5em;
+}
+
+.primary-head {
+ color: var(--primary-orange);
+ font-weight: var(--fw-bolder);
+ font-size: var(--fs-700);
+ line-height: var(--size-250);
+}
+
+.hello {
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-600);
+}
+
+.description {
+  padding: 1em;
+  margin-block: 1em;
+  border: 3px white solid;
+  font-size: var(--fs-small);
+  background-color: var(--primary-color-opacity);
+}
