@@ -5,7 +5,7 @@
   --primary-dark: hsl(222, 11%, 17%);
   --secondary-color-opacity: hsla(0, 0%, 97%, 0.103);
 
-
+  /* Font size */
   --fs-small: 0.75em;
   --fs-300: 1em;
   --fs-350: 1.25em;
@@ -13,13 +13,15 @@
   --fs-700: 2em;
   --fs-800: 2.5em;
   --fs-big: 3em;
-  
+
+  /* Font weight */
   --fw-100: 100;
   --fw-lighter: 300;
   --fw-regular: 400;
   --fw-bold: 700;
   --fw-bolder: 900;
 
+  /* Sizes */
   --size-50: 0.25em;
   --size-100: 0.5em;
   --size-150: 0.75em;
@@ -43,7 +45,7 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-  
+
 main {
   min-width: 20em;
 }
@@ -58,6 +60,7 @@ img {
 }
 
 /* Start styling */
+
 /* Landing Mobile Section */
 .wrapper {
   max-width: min(1200px, 92%);
@@ -90,10 +93,10 @@ img {
 }
 
 .primary-head {
- color: var(--primary-orange);
- font-weight: var(--fw-bolder);
- font-size: var(--fs-700);
- line-height: var(--size-250);
+  color: var(--primary-orange);
+  font-weight: var(--fw-bolder);
+  font-size: var(--fs-700);
+  line-height: var(--size-250);
 }
 
 .hello {
@@ -124,7 +127,6 @@ img {
 /* Finish Landing Mobile Section */
 
 /* Main Program Section */
-  
 .main-program {
   color: white;
   background-image: url('/images/program_bg.png');
@@ -230,8 +232,8 @@ img {
   height: 3.5em;
 }
 
-.fa-solid {
-    color: var(--primary-orange);
+.speakers-list .fa-solid {
+  color: var(--primary-orange);
 }
 
 /* Start Partner section styles */
