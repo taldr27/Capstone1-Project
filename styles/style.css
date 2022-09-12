@@ -279,3 +279,7 @@ img {
 .footer-mobile span {
   font-size: var(--fs-small);
 }
+
+main#about {
+  text-align: center;
+}
