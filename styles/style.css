@@ -3,7 +3,8 @@
   --primary-color-opacity: hsl(0, 0%, 97%);
   --primary-orange: hsl(6, 82%, 59%);
   --primary-dark: hsl(222, 11%, 17%);
-  --secondary-color-opacity: hsla(0, 0%, 97%, 0.103);
+  --secondary-area-opacity: hsla(0, 0%, 97%, 0.103);
+  --secondary-color-gray: hsla(227, 10%, 17%, 0.534);
 
   /* Font size */
   --fs-small: 0.75em;
@@ -82,7 +83,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  padding-inline: var(--size-270);
 }
 
 .landing-box {
@@ -90,6 +90,8 @@ img {
   flex-direction: column;
   align-items: stretch;
   gap: 0.5em;
+  padding-block: var(--size-270);
+  padding-inline: var(--size-270);
 }
 
 .primary-head {
@@ -124,7 +126,93 @@ img {
   font-weight: var(--fw-regular);
 }
 
+.top-menu {
+  background-color: var(--primary-dark);
+  /* background-color: var(--primary-dark); */
+  color: white;
+  display: none;
+  height: 2em;
+  max-width: 100%;
+}
+
+.header-menu {
+  display: none;
+}
+
+
 /* Finish Landing Mobile Section */
+
+@media (min-width: 768px){
+  .menu {
+    display: none;
+  }
+
+  .top-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .top-menu ul {
+    display: flex;
+    align-content: center;
+    gap: var(--size-300);
+    padding-right: 15em;
+  }
+
+  .header-menu {
+    display: block;
+    background-color: white;
+  }
+
+  .probando {
+    display: flex;
+    padding: 1em;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .menus {
+    display: flex;
+    gap: 2.5em;
+    align-items: center;
+  }
+  
+  .special-li {
+    border: 5px solid var(--primary-orange);
+    padding: 0.5em;
+    color: var(--primary-orange);
+  }
+
+  .landing-box {
+    padding: 7em;
+  }
+
+  .primary-head {
+    max-width: 50vw;
+    min-width: 70vw;
+    font-size: 60px;
+  }
+  
+  .hello {
+    font-size: var(--fs-800);
+  }
+
+  .description {
+    font-size: var(--fs-300);
+    max-width: 30vw;
+    min-width: 60vw;
+    padding: 1.5em;
+  }
+
+  .main-text {
+    padding: 1em;
+  }
+
+  .bottom-text {
+    color: var(--secondary-color-gray);
+  }
+}
 
 /* Main Program Section */
 .main-program {
@@ -132,7 +220,6 @@ img {
   background-image: url('images/program_bg.png');
   background-repeat: repeat;
   background-color: var(--primary-dark);
-  min-height: 70vh;
   text-align: center;
 }
 
@@ -162,7 +249,7 @@ img {
   min-width: 100%;
   padding: var(--size-150);
   font-size: var(--fs-small);
-  background-color: var(--secondary-color-opacity);
+  background-color: var(--secondary-area-opacity);
   color: white;
 }
 
@@ -191,6 +278,55 @@ img {
   width: 80%;
   height: 5em;
   margin-block: var(--size-400);
+}
+
+.btn-mobile-program {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .program-categories {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3em;
+    min-width: 0.1em;
+    max-height: 35em;
+    gap: var(--size-200);
+    justify-items: center;
+  }
+
+  .program-categories-details {
+    flex-direction: column;
+    min-width: 10%;
+  }
+
+  .program-categories-details img {
+    max-width: 100%;
+  }
+
+  .program-categories-details span {
+    flex: 0;
+  }
+  
+  .btn-program {
+    display: none;
+  }
+
+  .btn-mobile-program {
+    display: block;
+    text-decoration: underline;
+  }
+
+  .program-title {
+    padding: 0;
+  }
+
+  .program-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-block: 2em;
+  }
 }
 
 /* Speakers section styles */
@@ -246,6 +382,7 @@ img {
 .partner-heading {
   color: white;
   padding: 0.7em;
+  margin-top: 0;
 }
 
 .brands {
@@ -283,6 +420,36 @@ img {
 
 .footer-mobile span {
   font-size: var(--fs-small);
+}
+
+@media (min-width: 768px) {
+  .btn-speakers {
+    display: none;
+  }
+  .brands {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .partners {
+    padding-block: 2.5em;
+  }
+
+  .speakers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin-top: 2em;
+
+  }
+
+  .speakers-list-details {
+    max-width: 70%;
+  }
+
+  .wrapper-speakers {
+    padding: 4em;
+  }
 }
 
 /* About.html styling */
