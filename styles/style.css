@@ -76,14 +76,20 @@ img {
 }
 
 .sidebar {
+  display: none;
   background-color: rgb(102, 51, 153);
   position: fixed;
   min-width: 40%;
   min-height: 100%;
-  /* overflow: hidden; */
+ 
+}
+
+body {
+  overflow:scroll;
 }
 
 .sidebar ul {
+  
   padding-inline: 15%;
   padding-block: 40%;
 }
