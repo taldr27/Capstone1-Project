@@ -77,7 +77,7 @@ img {
 .land-page {
   align-items: center;
   width: 100%;
-  min-height: 82vh;
+  padding-bottom: var(--size-400);
   background-image: url('/images/mobile_bg.png');
   background-repeat: no-repeat;
   background-size: cover;
