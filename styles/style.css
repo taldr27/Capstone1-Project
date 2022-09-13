@@ -69,6 +69,29 @@ img {
   padding: var(--size-150);
 }
 
+.close-sidebar {
+  position: relative;
+  top: 3em;
+  left: 80%;
+}
+
+.sidebar {
+  background-color: rgb(102, 51, 153);
+  position: fixed;
+  min-width: 40%;
+  min-height: 100%;
+  /* overflow: hidden; */
+}
+
+.sidebar ul {
+  padding-inline: 15%;
+  padding-block: 40%;
+}
+
+.sidebar li {
+  padding-block: 0.6em;
+}
+
 .menu-ico {
   margin-block: var(--size-200);
   margin-inline-start: var(--size-50);
