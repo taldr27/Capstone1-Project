@@ -132,10 +132,6 @@ a {
   color: var(--primary-dark);
 }
 
-/* .menu {
-  position: fixed;
-} */
-
 .menu-ico {
   margin-block: var(--size-200);
   margin-inline-start: var(--size-50);
@@ -235,6 +231,10 @@ a {
   .header-menu {
     display: block;
     background-color: white;
+  }
+
+  .menus li a:hover {
+    color: var(--primary-orange);
   }
 
   .landing-box {
@@ -364,6 +364,10 @@ a {
   gap: 0.8em;
 }
 
+.program-categories-details:hover {
+  border: 1px solid white;
+}
+
 @media (min-width: 768px) {
   .program-categories {
     display: flex;
@@ -371,7 +375,7 @@ a {
     font-size: 1.3em;
     min-width: var(--size-small);
     max-height: 35em;
-    gap: var(--size-200);
+    gap: 0.3em;
     justify-items: center;
   }
 
@@ -379,6 +383,8 @@ a {
     flex-direction: column;
     min-width: 10%;
   }
+
+
 
   .program-categories-details img {
     max-width: 100%;
@@ -531,10 +537,6 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: var(--size-200);
     margin-top: var(--size-400);
-  }
-
-  .speakers-list-details {
-    max-width: 70%;
   }
 
   .wrapper-speakers {
