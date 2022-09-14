@@ -5,6 +5,7 @@
   --primary-dark: hsl(222, 11%, 17%);
   --secondary-area-opacity: hsla(0, 0%, 97%, 0.103);
   --secondary-color-gray: hsla(227, 10%, 17%, 0.534);
+  --primary-navbar: hsla(227, 10%, 17%, 0.877);
 
   /* Font size */
   --fs-small: 0.75em;
@@ -60,6 +61,11 @@ img {
   display: block;
 }
 
+a {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
 /* Start styling */
 
 /* Landing Mobile Section */
@@ -70,33 +76,56 @@ img {
 }
 
 .close-sidebar {
+  color: white;
   position: relative;
   top: 3em;
   left: 80%;
 }
 
-.sidebar {
-  display: none;
-  background-color: rgb(102, 51, 153);
-  position: fixed;
-  min-width: 40%;
-  min-height: 100%;
- 
+.close-sidebar-about {
+  color: white;
+  position: relative;
+  top: 6em;
+  left: 30%;
 }
 
-body {
-  overflow:scroll;
+.sidebar {
+  display: none;
+  background-color: hsla(227, 10%, 17%, 0.966);
+  color: white;
+  position: fixed;
+  min-width: 60%;
+  min-height: 100%;
+  z-index: 5;
 }
 
 .sidebar ul {
-  
-  padding-inline: 15%;
+  text-align: center;
   padding-block: 40%;
 }
 
 .sidebar li {
   padding-block: 0.6em;
 }
+
+.nav-selector {
+  margin-inline: 2em;
+  color: white;
+  margin-block: 1em;
+  background-color: var(--primary-navbar);
+}
+
+.nav-selector .guide_bar {
+  width: 100%;
+}
+
+.burger {
+  color: var(--primary-dark);
+}
+
+/* .menu {
+  position: fixed;
+} */
 
 .menu-ico {
   margin-block: var(--size-200);
@@ -163,6 +192,11 @@ body {
   display: none;
   height: 2em;
   max-width: 100%;
+}
+
+.top-menu a {
+  color: white;
+  text-decoration: none;
 }
 
 .header-menu {

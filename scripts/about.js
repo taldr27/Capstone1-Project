@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const burger = document.getElementById('burger');
+  const burger = document.getElementById('burger-about');
   function toggleBar() {
     const sideBar = document.getElementById('hide-menu');
     const body = document.getElementById('body');
@@ -14,5 +14,5 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
   burger.addEventListener('click', toggleBar);
-  document.getElementById('close-nav').addEventListener('click', toggleBar);
+  document.getElementById('close-nav-about').addEventListener('click', toggleBar);
 });

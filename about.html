@@ -13,42 +13,77 @@
     <!-- CSS file -->
     <link rel="stylesheet" href="styles/style.css">
     <!-- JS file -->
-    <script src="scripts/main.js"></script>
+    <script src="scripts/about.js"></script>
 </head>
 <body>
     <main class="about">
+        <div class="sidebar" id="hide-menu">
+            <a class="close-sidebar-about" id="close-nav-about"><i class="fa-solid fa-xmark"></i></a>
+            <ul >
+                <a href="index.html">
+                    <div class="nav-selector">
+                        <li>Home</li>
+                        <div class="guide_bar"></div>
+                    </div>
+                </a>
+                <a href="about.html">
+                    <div class="nav-selector">
+                        <li>About</li>
+                        <div class="guide_bar"></div>
+                    </div>
+                </a>
+                <a href="#logo">
+                    <div class="nav-selector">
+                        <li>Logo</li>
+                        <div class="guide_bar"></div>
+                    </div>
+                </a>
+                <a href="#previous-events">
+                    <div class="nav-selector">
+                        <li>Past Events</li>
+                        <div class="guide_bar"></div>
+                    </div>
+                </a>
+                <a href="#partners">
+                    <div class="nav-selector">
+                        <li>Partners</li>
+                        <div class="guide_bar"></div>
+                    </div>
+                </a>
+            </ul>
+        </div>
         <section class="land-page">
             <div>
                 <nav class="top-menu">
                     <ul>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-twitter"></i></li>
-                        <li>English</li>
-                        <li>My Page</li>
-                        <li>Logout</li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">My Page</a></li>
+                        <li><a href="#">Logout</a></li>
                     </ul>    
                 </nav>
             </div>
             <div class="header-menu">
                 <div class="probando">
                     <div>
-                        <img src="images/logo.png" alt="">
+                        <a href="#"><img src="images/logo.png" alt="main-logo" href="#"></a>
                     </div>
                     <nav>
                         <ul class="menus">
-                            <li>About</li>
-                            <li>Program</li>
-                            <li>Join</li>
-                            <li>Sponsor</li>
-                            <li>News</li>
-                            <li class="special-li">CC Campaign</li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#">Program</a></li>
+                            <li><a href="#">Join</a></li>
+                            <li><a href="#">Sponsor</a></li>
+                            <li><a href="#">News</a></li>
+                            <li class="special-li"><a href="#">CC Campaign</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
             <div class="landing-box">
                 <div class="menu-about">
-                    <i class="menu-ico fa-solid fa-bars"></i>
+                    <a class="burger" id="burger-about"><i class="menu-ico fa-solid fa-bars"></i></a>
                 </div>
                 <div>
                     <span class="primary-head primary-hello-about hello">"Hello! Musicians"</span>
@@ -69,7 +104,7 @@
             </div>
         </section>
 
-        <section class="logo-about">
+        <section class="logo-about" id="logo">
             <div class="wrapper">
                 <div class="logo-container">
                     <div class="logo-title">
@@ -86,7 +121,7 @@
             </div>
         </section>
 
-        <section class="past-summits">
+        <section class="past-summits" id="previous-events">
             <div class="wrapper ">
                 <div class="program-title">
                     <h3>See the past CC Global Summits</h3>
@@ -111,7 +146,7 @@
                 </div>
             </div>
         </section>
-        <section class="partners">
+        <section class="partners" id="partners">
             <div class="wrapper">
                 <div class="program-title partner-heading">
                     <h3>Partners</h3>
