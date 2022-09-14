@@ -326,16 +326,12 @@ a {
   color: white;
 }
 
-.program-categories-details img {
-  max-width: 20%;
-}
-
 .program-categories-details span {
   font-size: 1.4em;
   color: var(--primary-orange);
   text-align: start;
   flex: 1.7 0 0;
-  margin-left: 2em;
+  margin-left: 1em;
 }
 
 .program-categories-details p {
@@ -370,26 +366,30 @@ a {
 
 @media (min-width: 768px) {
   .program-categories {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     font-size: 1.3em;
-    min-width: var(--size-small);
-    max-height: 35em;
+    min-height: 100%;
     gap: 0.3em;
     justify-items: center;
   }
 
   .program-categories-details {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
-    min-width: 10%;
+    max-width: 1px;
+    min-height: 100%;
   }
 
-  .program-categories-details img {
-    max-width: 100%;
+  .program-categories-details p {
+    text-align: center;
   }
 
   .program-categories-details span {
     flex: 0;
+    text-align: center;
     margin-left: 0;
   }
 
@@ -399,6 +399,7 @@ a {
 
   .btn-mobile-program {
     display: block;
+    color: white;
     text-decoration: underline;
   }
 
@@ -410,7 +411,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: var(--size-400);
-    padding-block: var(--size-400);
+    padding-block: var(--size-650);
   }
 }
 
@@ -721,10 +722,6 @@ main.about {
 
   .past-summits {
     margin-bottom: var(--size-600);
-  }
-
-  .program-title {
-    padding-bottom: var(--size-600);
   }
 
   .footer-desktop-about {
