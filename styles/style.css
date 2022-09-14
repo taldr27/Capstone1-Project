@@ -112,6 +112,11 @@ a {
   padding-block: var(--size-120);
 }
 
+.guide_bar {
+  width: 15%;
+  border-bottom: 1px solid var(--primary-orange);
+}
+
 .nav-selector {
   margin-inline: var(--size-400);
   color: white;
@@ -191,7 +196,6 @@ a {
 
 .top-menu {
   background-color: var(--primary-dark);
-  /* background-color: var(--primary-dark); */
   color: white;
   display: none;
   height: var(--size-400);
@@ -207,10 +211,10 @@ a {
   display: none;
 }
 
-
 /* Finish Landing Mobile Section */
+
 /* Landing index desktop version */
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .menu {
     display: none;
   }
@@ -238,6 +242,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    padding: var(--size-900);
   }
 
   .probando {
@@ -252,15 +257,11 @@ a {
     gap: var(--size-500);
     align-items: center;
   }
-  
+
   .special-li {
     border: 5px solid var(--primary-orange);
     padding: var(--size-100);
     color: var(--primary-orange);
-  }
-
-  .landing-box {
-    padding: var(--size-900);
   }
 
   .primary-head {
@@ -268,7 +269,7 @@ a {
     min-width: 70vw;
     font-size: 60px;
   }
-  
+
   .hello {
     font-size: var(--fs-800);
   }
@@ -288,7 +289,9 @@ a {
     color: var(--secondary-color-gray);
   }
 }
+
 /* Finish landing index desktop version */
+
 /* Main Program Section */
 .main-program {
   color: white;
@@ -296,11 +299,6 @@ a {
   background-repeat: repeat;
   background-color: var(--primary-dark);
   text-align: center;
-}
-
-.guide_bar {
-  width: 15%;
-  border-bottom: 1px solid var(--primary-orange);
 }
 
 .program-title {
@@ -330,7 +328,6 @@ a {
 
 .program-categories-details img {
   max-width: 20%;
-  /* flex: 0 0 0; */
 }
 
 .program-categories-details span {
@@ -391,7 +388,7 @@ a {
     flex: 0;
     margin-left: 0;
   }
-  
+
   .btn-program {
     display: none;
   }
@@ -514,6 +511,7 @@ a {
   .btn-speakers {
     display: none;
   }
+
   .brands {
     flex-wrap: nowrap;
     gap: 0;
@@ -533,7 +531,6 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: var(--size-200);
     margin-top: var(--size-400);
-
   }
 
   .speakers-list-details {
@@ -556,18 +553,17 @@ a {
     justify-content: center;
     gap: var(--size-600);
   }
-  
+
   .footer-desktop img {
     margin-left: var(--size-600);
   }
-  
+
   .footer-desktop-title {
     max-width: 30%;
     text-align: start;
     font-size: var(--fs-small);
     padding-block: 3em;
   }
-
 }
 
 /* About.html styling */
@@ -607,7 +603,7 @@ main.about {
   text-decoration: underline;
 }
 
-.program-title img{
+.program-title img {
   max-width: 100%;
 }
 
@@ -634,7 +630,6 @@ main.about {
   position: absolute;
   min-width: 100%;
   background-color: rgba(255, 166, 0, 0.5);
-  position: absolute;
   min-height: 100%;
 }
 
@@ -659,7 +654,7 @@ main.about {
 }
 
 .logo-desktop {
-  margin-block: -1em; 
+  margin-block: -1em;
 }
 
 .logo-title {
@@ -672,12 +667,13 @@ main.about {
 
 /* Landing about desktop version */
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .primary-head-about {
     max-width: 100vw;
     padding-inline: 3em;
     text-align: center;
   }
+
   .menu-about {
     display: none;
   }
@@ -692,7 +688,7 @@ main.about {
 
   .description-about-desktop {
     display: block;
-    text-align: center ;
+    text-align: center;
     margin-inline: 12em;
     padding-inline: var(--size-700);
   }
@@ -726,18 +722,15 @@ main.about {
   .past-summits {
     margin-bottom: var(--size-600);
   }
-  
+
   .program-title {
     padding-bottom: var(--size-600);
   }
-  
+
   .footer-desktop-about {
-    
     color: white;
     background-color: var(--primary-dark);
   }
-
 }
 
 /* Finish landing about desktop version */
-
