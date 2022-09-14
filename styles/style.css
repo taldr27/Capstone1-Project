@@ -295,7 +295,7 @@ a {
 /* Main Program Section */
 .main-program {
   color: white;
-  background-image: url('images/program_bg.png');
+  background-image: url('../images/program_bg.png');
   background-repeat: repeat;
   background-color: var(--primary-dark);
   text-align: center;
