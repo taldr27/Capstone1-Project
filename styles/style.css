@@ -338,6 +338,7 @@ a {
   color: var(--primary-orange);
   text-align: start;
   flex: 1.7 0 0;
+  margin-left: 2em;
 }
 
 .program-categories-details p {
@@ -381,6 +382,7 @@ a {
 
   .program-categories-details span {
     flex: 0;
+    margin-left: 0;
   }
   
   .btn-program {
@@ -451,7 +453,7 @@ a {
 
 .partners {
   background-color: var(--primary-dark);
-  padding-block: 1evar(--size-200);
+  padding-block: var(--size-200);
 }
 
 .partner-heading {
@@ -714,7 +716,7 @@ main.about {
   }
   
   .program-title {
-    padding-bottom: var(--size-300);
+    padding-bottom: var(--size-600);
   }
   
   .footer-desktop-about {
