@@ -4,9 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main</title>
+    <!-- Google Fonts -->
+    <script src="https://kit.fontawesome.com/1bc3a7e061.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- JS file -->
+    <script src="scripts/main.js"></script>
 </head>
-<body>
-    
+<body id="body">
+    <main>
+    <section class="land-page">
+            <div class="header-menu">
+                <div class="top-menu">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#">Spanish</a></li>
+                        <li><a href="#">My Page</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>    
+                </div>
+                <div class="probando">
+                    <div>
+                        <a href="#"><img class="logo-desktop" src="images/new_logo.png" width="120" height="120" alt="main-logo" href="#"></a>
+                    </div>
+                    <nav>
+                        <ul class="menus">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#">Program</a></li>
+                            <li><a href="#">Join</a></li>
+                            <li><a href="#">Sponsor</a></li>
+                            <li><a href="#">News</a></li>
+                            <li class="special-li"><a href="#">CC Campaign</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="sidebar"id="hide-menu">
+                <a class="close-sidebar" id="close-nav"><i class="fa-solid fa-xmark"></i></a>
+                <ul >
+                    <a href="index.html">
+                        <div class="nav-selector">
+                            <li>Home</li>
+                            <div class="guide_bar"></div>
+                        </div>
+                    </a>
+                    <a href="about.html">
+                        <div class="nav-selector">
+                            <li>About</li>
+                            <div class="guide_bar"></div>
+                        </div>
+                    </a>
+                    <a href="#program">
+                        <div class="nav-selector">
+                            <li>Main Program</li>
+                            <div class="guide_bar"></div>
+                        </div>
+                    </a>
+                    <a href="#speakers">
+                        <div class="nav-selector">
+                            <li>Speakers</li>
+                            <div class="guide_bar"></div>
+                        </div>
+                    </a>
+                    <a href="#partners">
+                        <div class="nav-selector">
+                            <li>Partners</li>
+                            <div class="guide_bar"></div>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+            <div class="landing-box">
+                <div class="menu">
+                    <a class="burger" id="burger"><i class="menu-ico fa-solid fa-bars"></i></a>
+                </div>
+                <div class="main-text">
+                    <span class="primary-head hello">"Hello! Musicians"</span>
+                <h1 class="primary-head">GUITARRIST GLOBAL CONVENTION 2022</h1>
+                <p class="description">The Guitarrist Global Convention(GGC) is a performing and guitar event for players and music-lovers of all ages, levels, and interests!
+                </p>
+                </div>
+                <div class="bottom-text">
+                    <h2 class="landing-date">2022.06.16(THU) - 17(FRI)</h2>
+                    <span class="landing-date place">@ Anaheim Ballroom at Marriott, Anaheim, CA</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-program" id="program">
+            <div class="wrapper">
+                <div class="program-container">
+                    <div class="program-title">
+                        <h3>Main Program</h3>
+                        <div class="guide_bar"></div>
+                    </div>
+                    <div class="program-categories">
+                        <div class="program-categories-details">
+                            <img src="images/program_icon_01.png" alt="">
+                            <span>Conferences</span>
+                            <p>Listen to the artists from various countries and bands about the messeges of learning and growing.</p>
+                        </div>
+                        <div class="program-categories-details">
+                            <img src="images/program_icon_02.png" alt="">
+                            <span>Guitars Exhibition</span>
+                            <p>Appreciate various famous guitars, organized from Gibson Guitar Center.</p>
+                        </div>
+                        <div class="program-categories-details">
+                            <img src="images/program_icon_03.png" alt="">
+                            <span>Forum</span>
+                            <p>Have the time to share your thoughts and opinions with music experts.</p>
+                        </div>
+                        <div class="program-categories-details">
+                            <img src="images/program_icon_04.png" alt="">
+                            <span>Workshop</span>
+                            <p>Try creating your own music with your favorite artists and bands</p>
+                        </div>
+                        <div class="program-categories-details">
+                            <img src="images/program_icon_05.png" alt="">
+                            <span>GGC Ignite</span>
+                            <p>Get opportunities to network with GGC affiliates around the world, also after the summit.</p>
+                        </div>
+                        
+                    </div>
+                    <a class="btn-mobile-program">SEE THE WHOLE PROGRAM</a>
+                    <button type="button" class="btn-program">Join CC Global Summit 2015</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners" id="partners">
+            <div class="wrapper">
+                <div class="program-title partner-heading">
+                    <h3>Partners</h3>
+                    <div class="guide_bar partners-bar"></div>
+                </div>
+                <div class="brands">
+                    
+                        <svg class="brand-icon">
+                            <use xlink:href="images/brand-icons.svg#Gibson_logo"></use>
+                        </svg>
+                 
+                        <svg class="brand-icon">
+                            <use xlink:href="images/brand-icons.svg#Ephipone_logo"></use>
+                          </svg>
+                   
+                        <svg class="brand-icon">
+                            <use xlink:href="images/brand-icons.svg#kiko-loureiro"></use>
+                          </svg>
+                  
+                        <svg class="brand-icon">
+                            <use xlink:href="images/brand-icons.svg#arctic-monkeys_am"></use>
+                          </svg>
+                    
+                        <svg class="brand-icon">
+                            <use xlink:href="images/brand-icons.svg#arch-enemy_stigmata-symbol"></use>
+                          </svg>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-mobile">
+                <img width="120" height="120" src="images/new_logo.png" alt="">
+                <div>
+                    <span>2022 Creative Commons</span><br>
+                    <span>Some Rights Reserved.</span>
+                </div>
+        </footer>
+        <footer class="footer-desktop">
+            <img width="120" height="120" src="images/new_logo.png" alt="">
+            <div class="footer-desktop-title">
+                <span>2022 GGC. Some Rights Reserved</span><br><br>
+                <span>2022 Guitarrist Global Convention. Some Rights Reserved 2022 Creative Commons Korea.
+                </span>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
