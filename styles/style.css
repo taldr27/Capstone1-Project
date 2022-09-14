@@ -360,6 +360,13 @@ a {
   display: none;
 }
 
+.speaker-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  gap: 0.8em;
+}
+
 @media (min-width: 768px) {
   .program-categories {
     display: flex;
@@ -524,7 +531,7 @@ a {
   .speakers-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1evar(--size-200);
+    gap: var(--size-200);
     margin-top: var(--size-400);
 
   }
@@ -648,6 +655,11 @@ main.about {
   gap: var(--size-200);
   padding: var(--size-400);
   flex-direction: column;
+  align-items: center;
+}
+
+.logo-desktop {
+  margin-block: -1em; 
 }
 
 .logo-title {
