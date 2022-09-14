@@ -24,8 +24,10 @@
   --fw-bolder: 900;
 
   /* Sizes */
+  --size-small: 0.1em;
   --size-50: 0.25em;
   --size-100: 0.5em;
+  --size-120: 0.6em;
   --size-150: 0.75em;
   --size-170: 0.78em;
   --size-200: 1em;
@@ -35,10 +37,12 @@
   --size-400: 2em;
   --size-500: 2.5em;
   --size-600: 3em;
+  --size-650: 3.5em;
   --size-700: 4em;
   --size-800: 6em;
   --size-900: 7em;
   --size-xl: 9em;
+  --size-xxl: 15em;
 }
 
 * {
@@ -78,14 +82,14 @@ a {
 .close-sidebar {
   color: white;
   position: relative;
-  top: 3em;
+  top: var(--size-600);
   left: 80%;
 }
 
 .close-sidebar-about {
   color: white;
   position: relative;
-  top: 6em;
+  top: var(--size-800);
   left: 30%;
 }
 
@@ -105,13 +109,13 @@ a {
 }
 
 .sidebar li {
-  padding-block: 0.6em;
+  padding-block: var(--size-120);
 }
 
 .nav-selector {
-  margin-inline: 2em;
+  margin-inline: var(--size-400);
   color: white;
-  margin-block: 1em;
+  margin-block: var(--size-200);
   background-color: var(--primary-navbar);
 }
 
@@ -137,7 +141,7 @@ a {
   align-items: center;
   width: 100%;
   padding-bottom: var(--size-400);
-  background-image: url('/images/mobile_bg.png');
+  background-image: url('../images/mobile_bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -148,7 +152,7 @@ a {
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  gap: 0.5em;
+  gap: var(--size-100);
   padding-block: var(--size-270);
   padding-inline: var(--size-270);
 }
@@ -177,7 +181,7 @@ a {
 .landing-date {
   font-size: var(--fs-600);
   font-weight: var(--fw-bolder);
-  padding: 0.1em;
+  padding: var(--size-small);
 }
 
 .place {
@@ -190,7 +194,7 @@ a {
   /* background-color: var(--primary-dark); */
   color: white;
   display: none;
-  height: 2em;
+  height: var(--size-400);
   max-width: 100%;
 }
 
@@ -221,7 +225,7 @@ a {
     display: flex;
     align-content: center;
     gap: var(--size-300);
-    padding-right: 15em;
+    padding-right: var(--size-xxl);
   }
 
   .header-menu {
@@ -229,27 +233,34 @@ a {
     background-color: white;
   }
 
+  .landing-box {
+    background-image: url('../images/main_big.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
   .probando {
     display: flex;
-    padding: 1em;
+    padding: var(--size-200);
     justify-content: space-around;
     align-items: center;
   }
 
   .menus {
     display: flex;
-    gap: 2.5em;
+    gap: var(--size-500);
     align-items: center;
   }
   
   .special-li {
     border: 5px solid var(--primary-orange);
-    padding: 0.5em;
+    padding: var(--size-100);
     color: var(--primary-orange);
   }
 
   .landing-box {
-    padding: 7em;
+    padding: var(--size-900);
   }
 
   .primary-head {
@@ -266,11 +277,11 @@ a {
     font-size: var(--fs-300);
     max-width: 30vw;
     min-width: 60vw;
-    padding: 1.5em;
+    padding: var(--size-300);
   }
 
   .main-text {
-    padding: 1em;
+    padding: var(--size-200);
   }
 
   .bottom-text {
@@ -309,7 +320,7 @@ a {
 .program-categories-details {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: var(--size-200);
   min-width: 100%;
   padding: var(--size-150);
   font-size: var(--fs-small);
@@ -353,7 +364,7 @@ a {
     display: flex;
     flex-direction: row;
     font-size: 1.3em;
-    min-width: 0.1em;
+    min-width: var(--size-small);
     max-height: 35em;
     gap: var(--size-200);
     justify-items: center;
@@ -388,8 +399,8 @@ a {
   .program-container {
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    padding-block: 2em;
+    gap: var(--size-400);
+    padding-block: var(--size-400);
   }
 }
 
@@ -429,7 +440,7 @@ a {
   background-color: white;
   border: 1px solid var(--primary-color);
   width: 100%;
-  height: 3.5em;
+  height: var(--size-650);
 }
 
 .speakers-list .fa-solid {
@@ -440,13 +451,13 @@ a {
 
 .partners {
   background-color: var(--primary-dark);
-  padding-block: 1em;
+  padding-block: 1evar(--size-200);
 }
 
 .partner-heading {
   color: white;
   padding: 0.7em;
-  margin-top: 0;
+  margin-top: -1em;
 }
 
 .brands {
@@ -464,7 +475,7 @@ a {
 
 .partners-bar {
   margin-top: -0.7em;
-  margin-bottom: 1em;
+  margin-bottom: 1evar(--size-200);
 }
 
 /* Footer mobile styles */
@@ -497,17 +508,22 @@ a {
   .brands {
     flex-wrap: nowrap;
     gap: 0;
+    margin-top: -2em;
   }
 
   .partners {
     padding-block: 2.5em;
   }
 
+  .partners-about {
+    display: none;
+  }
+
   .speakers-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    margin-top: 2em;
+    gap: 1evar(--size-200);
+    margin-top: var(--size-400);
 
   }
 
@@ -573,7 +589,7 @@ main.about {
   font-size: var(--fs-small);
   color: var(--primary-dark);
   line-height: 22px;
-  padding: 1em;
+  padding: var(--size-200);
 }
 
 .h2-email {
@@ -622,7 +638,7 @@ main.about {
 }
 
 .past-summits {
-  padding: 1em;
+  padding: 1evar(--size-200);
 }
 
 .logo-container {
@@ -637,7 +653,7 @@ main.about {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 1evar(--size-200);
 }
 
 /* Landing about desktop version */
@@ -664,14 +680,14 @@ main.about {
     display: block;
     text-align: center ;
     margin-inline: 12em;
-    padding-inline: 4em;
+    padding-inline: var(--size-700);
   }
 
   .program-title-desktop {
     display: block;
     text-align: center;
     margin-inline: 12em;
-    margin-bottom: 2em;
+    margin-bottom: var(--size-400);
     font-size: var(--fs-small);
   }
 
@@ -689,16 +705,16 @@ main.about {
 
   .previous-events {
     justify-content: center;
-    gap: 3em;
+    gap: var(--size-600);
     grid-template-columns: 40% 40%;
   }
 
   .past-summits {
-    margin-bottom: 3em;
+    margin-bottom: var(--size-600);
   }
   
   .program-title {
-    padding-bottom: 3em;
+    padding-bottom: var(--size-300);
   }
   
   .footer-desktop-about {
@@ -706,9 +722,7 @@ main.about {
     color: white;
     background-color: var(--primary-dark);
   }
-  .partners {
-    display: none;
-  }
+
 }
 
 /* Finish landing about desktop version */
