@@ -2,7 +2,8 @@
 
 # Concerts Page
 
-> This repository will contain a guitarrist convention page and a design of [Cindy Shin](https://www.behance.net/adagio07).
+> This repository showcases a custom-designed guitar convention page, developed with cutting-edge technologies such as HTML, CSS, and JavaScript. With a stunning design crafted by renowned designer [Cindy Shin](https://www.behance.net/adagio07).
+
 
 
 ## Built With
@@ -11,7 +12,7 @@
 - JavaScript
 ## Live Demo (if available)
 
-[GitHub Pages Demo](https://taldr27.github.io/capstone1/)
+[GitHub Pages Live Demo](https://taldr27.github.io/Capstone1-Project/)
 
 
 ## Getting Started
@@ -20,7 +21,9 @@ Clone the repository on your local machine and open the index.html file.
 
 ### Setup
 ```
-$git clone git@github.com:taldr27/capstone1.git (SSH)
+- git clone git@github.com:taldr27/capstone1.git (SSH)
+- cd capstone1-project
+- Open index.html file
 ```
 
 ## Authors
