@@ -1,8 +1,13 @@
 window.addEventListener('DOMContentLoaded', () => {
+  // Get the burger element
   const burger = document.getElementById('burger');
+  // Define the toggleBar function
   function toggleBar() {
+    // Get the sideBar and body elements
     const sideBar = document.getElementById('hide-menu');
     const body = document.getElementById('body');
+
+    // Check the display property of the sideBar element
     if (sideBar.style.display === 'block') {
       sideBar.style.display = 'none';
       burger.style.color = 'var(--primary-dark)';
@@ -57,65 +62,65 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const program = document.getElementById('program');
 
-  function speakersHTML() {
+  function createSpeakersSection() {
     const mainSection = document.createElement('section');
     mainSection.id = 'speakers';
     mainSection.className = 'speakers';
     program.insertAdjacentElement('afterend', mainSection);
 
-    const wrapperDiv = document.createElement('div');
-    wrapperDiv.className = 'wrapper wrapper-speakers';
-    mainSection.appendChild(wrapperDiv);
+    const wrapper = document.createElement('div');
+    wrapper.className = 'wrapper wrapper-speakers';
+    mainSection.appendChild(wrapper);
 
-    const programDiv = document.createElement('div');
-    programDiv.className = 'program-title';
-    wrapperDiv.appendChild(programDiv);
+    const title = document.createElement('div');
+    title.className = 'program-title';
+    wrapper.appendChild(title);
 
-    const h3 = document.createElement('h3');
-    h3.innerHTML = 'Featured Musicians';
-    programDiv.appendChild(h3);
+    const heading = document.createElement('h3');
+    heading.innerHTML = 'Featured Musicians';
+    title.appendChild(heading);
 
     const line = document.createElement('div');
     line.className = 'guide_bar';
-    programDiv.appendChild(line);
+    title.appendChild(line);
 
     const speakerContainer = document.createElement('div');
     speakerContainer.className = 'speakers-list';
-    wrapperDiv.appendChild(speakerContainer);
+    wrapper.appendChild(speakerContainer);
 
-    for (let i = 0; i < 6; i += 1) {
-      const speakersDetails = document.createElement('div');
-      speakersDetails.className = 'speakers-list-details';
-      speakerContainer.appendChild(speakersDetails);
+    speakers.forEach((speaker) => {
+      const speakerDetails = document.createElement('div');
+      speakerDetails.className = 'speakers-list-details';
+      speakerContainer.appendChild(speakerDetails);
 
       const speakerImg = document.createElement('img');
-      speakerImg.className = '';
-      speakerImg.src = speakers[i].speakerImg;
-      speakersDetails.appendChild(speakerImg);
+      speakerImg.src = speaker.speakerImg;
+      speakerDetails.appendChild(speakerImg);
 
-      const speakerDivDetails = document.createElement('div');
-      speakerDivDetails.className = 'speaker-text';
-      speakersDetails.appendChild(speakerDivDetails);
+      const speakerText = document.createElement('div');
+      speakerText.className = 'speaker-text';
+      speakerDetails.appendChild(speakerText);
 
-      const spanSpeaker = document.createElement('span');
-      spanSpeaker.className = 'speaker-name';
-      spanSpeaker.innerHTML = speakers[i].speakerName;
-      speakerDivDetails.appendChild(spanSpeaker);
+      const speakerName = document.createElement('span');
+      speakerName.className = 'speaker-name';
+      speakerName.innerHTML = speaker.speakerName;
+      speakerText.appendChild(speakerName);
 
-      const pSpeaker = document.createElement('p');
-      pSpeaker.className = 'speaker-school';
-      pSpeaker.innerHTML = speakers[i].speakerSchool;
-      speakerDivDetails.appendChild(pSpeaker);
+      const speakerSchool = document.createElement('p');
+      speakerSchool.className = 'speaker-school';
+      speakerSchool.innerHTML = speaker.speakerSchool;
+      speakerText.appendChild(speakerSchool);
+
+      const speakerDescription = document.createElement('p');
+      speakerDescription.className = 'speaker-description';
+      speakerDescription.innerHTML = speaker.speakerDescription;
+      speakerText.appendChild(speakerDescription);
 
       const line = document.createElement('div');
       line.className = 'guide_bar';
-      speakerDivDetails.appendChild(line);
-
-      const pDescripSpeaker = document.createElement('p');
-      pDescripSpeaker.className = 'speaker-description';
-      pDescripSpeaker.innerHTML = speakers[i].speakerDescription;
-      speakerDivDetails.appendChild(pDescripSpeaker);
-    }
+      speakerText.appendChild(line);
+    });
   }
-  window.onload = speakersHTML();
+
+  window.onload = createSpeakersSection;
 });

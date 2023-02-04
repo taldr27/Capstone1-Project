@@ -70,6 +70,11 @@ a {
   text-decoration: none;
 }
 
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
 /* Start styling */
 
 /* Landing Mobile Section */
@@ -216,9 +221,7 @@ a {
   }
 
   .top-menu {
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
   }
 
   .top-menu ul {
@@ -245,17 +248,13 @@ a {
     padding: var(--size-900);
   }
 
-  .probando {
-    display: flex;
+  .nav-bar {
     padding: var(--size-200);
     justify-content: space-around;
-    align-items: center;
   }
 
   .menus {
-    display: flex;
     gap: var(--size-500);
-    align-items: center;
   }
 
   .special-li {
@@ -302,11 +301,9 @@ a {
 }
 
 .program-title {
-  display: flex;
   gap: var(--size-200);
   padding: var(--size-400);
   flex-direction: column;
-  align-items: center;
 }
 
 .program-categories {
@@ -316,8 +313,6 @@ a {
 }
 
 .program-categories-details {
-  display: flex;
-  align-items: center;
   gap: var(--size-200);
   min-width: 100%;
   padding: var(--size-150);
@@ -403,10 +398,6 @@ a {
     text-decoration: underline;
   }
 
-  .program-title {
-    padding: 0;
-  }
-
   .program-container {
     display: flex;
     flex-direction: column;
@@ -486,16 +477,14 @@ a {
 
 .partners-bar {
   margin-top: -0.7em;
-  margin-bottom: 1evar(--size-200);
+  margin-bottom: var(--size-200);
 }
 
 /* Footer mobile styles */
 
 .footer-mobile {
-  display: flex;
   padding: var(--size-200);
   min-height: auto;
-  align-items: center;
   justify-content: center;
   gap: var(--size-600);
 }
@@ -550,7 +539,6 @@ a {
     display: flex;
     padding: var(--size-200);
     min-height: auto;
-    align-items: center;
     justify-content: center;
     gap: var(--size-600);
   }
@@ -643,15 +631,13 @@ main.about {
 }
 
 .past-summits {
-  padding: 1evar(--size-200);
+  padding: var(--size-200);
 }
 
 .logo-container {
-  display: flex;
   gap: var(--size-200);
   padding: var(--size-400);
   flex-direction: column;
-  align-items: center;
 }
 
 .logo-desktop {
@@ -659,10 +645,8 @@ main.about {
 }
 
 .logo-title {
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 1evar(--size-200);
 }
 
@@ -707,11 +691,9 @@ main.about {
   }
 
   .logo-container {
-    display: flex;
     gap: var(--size-200);
     padding: var(--size-400);
     flex-direction: column;
-    align-items: center;
   }
 
   .previous-events {
