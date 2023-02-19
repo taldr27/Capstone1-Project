@@ -77,7 +77,6 @@
 
 <div>
   <img src="./images/desktop.png" alt="Desktop Image" style="max-width: 670px;">
-  <img src="./images/mobile.png" alt="Mobile Image" style="max-width: 160px;">
 </div>
 
 
